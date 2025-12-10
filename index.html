@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joshua Gonzalez - Innovation & Technology Speaker</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&family=Source+Sans+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">Joshua Gonzalez</a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#cv">CV</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-indicator" id="scrollIndicator"></div>
+
+    <!-- Floating Particles -->
+    <div class="particles" id="particles"></div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-carousel">
+            <div class="hero-arrow hero-prev" onclick="changeHeroSlide(-1)"><i class="fas fa-chevron-left"></i></div>
+            <div class="hero-arrow hero-next" onclick="changeHeroSlide(1)"><i class="fas fa-chevron-right"></i></div>
+            <div class="hero-track" id="heroTrack">
+                <div class="hero-slide" style="background-image:url('./assets/imgs/1.svg');"></div>
+                <div class="hero-slide" style="background-image:url('./assets/imgs/2.svg');"></div>
+                <div class="hero-slide" style="background-image:url('./assets/imgs/3.svg');"></div>
+                <div class="hero-slide" style="background-image:url('./assets/imgs/4.svg');"></div>
+            </div>
+            <div class="hero-dots">
+                <div class="hero-dot active" onclick="currentHeroSlide(1)"></div>
+                <div class="hero-dot" onclick="currentHeroSlide(2)"></div>
+                <div class="hero-dot" onclick="currentHeroSlide(3)"></div>
+                <div class="hero-dot" onclick="currentHeroSlide(4)"></div>
+            </div>
+        </div>
+        <div class="tech-elements">
+            <div class="tech-element"><i class="fas fa-brain"></i></div>
+            <div class="tech-element"><i class="fas fa-microchip"></i></div>
+            <div class="tech-element"><i class="fas fa-atom"></i></div>
+            <div class="tech-element"><i class="fas fa-network-wired"></i></div>
+            <div class="tech-element"><i class="fas fa-dna"></i></div>
+            <div class="tech-element"><i class="fas fa-rocket"></i></div>
+        </div>
+        <div class="hero-content">
+            <h1>Joshua Gonzalez</h1>
+            <p class="subtitle">Neuroscience & Technology Innovation Speaker</p>
+            <p class="description">Bridging the gap between neuroscience and technology through elegant presentations that explore the fascinating intersection of brain science, artificial intelligence, and human potential.</p>
+            <a href="#about" class="cta-button">Explore My Journey</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+            <div class="about-image">
+                <div class="profile-img">
+                    <img class="profile-joshua" src="./assets/imgs/aboutme.svg" alt="Profile Image">
+                </div>
+            </div>
+            <div class="about-text">
+                <h3>Welcome to My World</h3>
+                <p>I speak at the intersection of neuroscience and technology, translating brain science into practical insights for AI, product design, and human performance.</p>
+                <p>My work bridges research and real-world impact—helping teams build ethical, human-centered technology that augments cognition and unlocks potential.</p>
+                <p>Beyond the stage, I mentor, research, and collaborate with leaders to craft elegant solutions to complex problems.</p>
+                <div class="skills">
+                    <span class="skill-tag">Neuroscience</span>
+                    <span class="skill-tag">AI & Machine Learning</span>
+                    <span class="skill-tag">Cognitive Science</span>
+                    <span class="skill-tag">Public Speaking</span>
+                    <span class="skill-tag">Research</span>
+                    <span class="skill-tag">Innovation</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Carousel Section -->
+    <section id="events" class="section">
+        <div class="events-carousel">
+            <div class="carousel-container">
+                <h2 class="carousel-title">Featured Speaking Events</h2>
+                <div class="carousel-wrapper">
+                    <div class="carousel-arrows carousel-prev" onclick="changeSlide(-1)">
+                        <i class="fas fa-chevron-left"></i>
+                    </div>
+                    <div class="carousel-arrows carousel-next" onclick="changeSlide(1)">
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                    <div class="carousel-track" id="carouselTrack">
+                        <div class="carousel-slide">
+                            <div class="event-image">
+                                <!-- Reemplaza la ruta de ejemplo por la foto real de este evento -->
+                                <img class="event-photo" src="./assets/imgs/1.svg" alt="Neuroscience &amp; AI Conference 2024">
+                            </div>
+                            <div class="event-content">
+                                <div class="event-date">March 2024</div>
+                                <h3 class="event-title">ISTMUN 2025 United Nations Simulation</h3>
+                                <p class="event-description">Participated in ITSMUN, contributing actively to high-level diplomatic discussions and collaborative policy drafting. Recognized with the ‘Influential Delegate’ award for effective negotiation, persuasive communication, and consistent leadership throughout committee sessions.</p>
+                                <div class="event-stats">
+                                    <div class="stat">
+                                        <div class="stat-number">500+</div>
+                                        <div class="stat-label">DEBATE PARTICIPANTS</div>
+                                    </div>
+                                    <div class="stat">
+                                        <div class="stat-number">2</div>
+                                        <div class="stat-label">Days</div>
+                                    </div>
+                                    <div class="stat">
+                                        <div class="stat-number">5.0</div>
+                                        <div class="stat-label">Rating</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <div class="event-image">
+                                <!-- Reemplaza la ruta de ejemplo por la foto real de este evento -->
+                                <img class="event-photo" src="./assets/imgs/3.svg" alt="Leadership Excellence Conference">
+                            </div>
+                            <div class="event-content">
+                                <div class="event-date">January 2024</div>
+                                <h3 class="event-title">Speech in Parlament of Panama</h3>
+                                <p class="event-description">Delivered a clear, engaging session on Constitutional Literacy, highlighting why accessible civic education strengthens democratic participation. Broke down key constitutional principles, showcased real-life examples, and offered practical frameworks to empower citizens to understand and exercise their rights.</p>
+                                <div class="event-stats">
+                                    <div class="stat">
+                                        <div class="stat-number">200+</div>
+                                        <div class="stat-label">Leaders</div>
+                                    </div>
+                                    <div class="stat">
+                                        <div class="stat-number">2</div>
+                                        <div class="stat-label">Hours</div>
+                                    </div>
+                                    <div class="stat">
+                                        <div class="stat-number">95%</div>
+                                        <div class="stat-label">Satisfaction</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <div class="event-image">
+                                <!-- Reemplaza la ruta de ejemplo por la foto real de este evento -->
+                                <img class="event-photo" src="./assets/imgs/4.svg" alt="Global Entrepreneurship Forum">
+                            </div>
+                            <div class="event-content">
+                                <div class="event-date">November 2023</div>
+                                <h3 class="event-title">Leadership and Recycling Talk</h3>
+                                <p class="event-description">Delivered an engaging talk at MIDES on recycling, leadership, and environmental consciousness, emphasizing how small community actions can drive large-scale sustainability. Shared practical strategies for responsible waste management, highlighted youth-led initiatives, and presented leadership frameworks that inspire citizens to become agents of environmental change.</p>
+                                <div class="event-stats">
+                                    <div class="stat">
+                                        <div class="stat-number">300+</div>
+                                        <div class="stat-label">Entrepreneurs</div>
+                                    </div>
+                                    <div class="stat">
+                                        <div class="stat-number">90</div>
+                                        <div class="stat-label">Minutes</div>
+                                    </div>
+                                    <div class="stat">
+                                        <div class="stat-number">4.8</div>
+                                        <div class="stat-label">Rating</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-nav">
+                        <div class="nav-dot active" onclick="currentSlide(1)"></div>
+                        <div class="nav-dot" onclick="currentSlide(2)"></div>
+                        <div class="nav-dot" onclick="currentSlide(3)"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Professional Journey Section -->
+    <section id="cv" class="section events-cv">
+        <h2 class="section-title">Professional Journey</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-date">2025</div>
+                    <div class="timeline-title">ISTMUN 2025 United Nations Simulation</div>
+                    <div class="timeline-description">Participated in ITSMUN, contributing actively to high-level diplomatic discussions and collaborative policy drafting. Recognized with the ‘Influential Delegate’ award for effective negotiation, persuasive communication, and consistent leadership throughout committee sessions.</div>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-date">2025</div>
+                    <div class="timeline-title">Parliament of Panama Speech</div>
+                    <div class="timeline-description">Delivered a clear, engaging session on Constitutional Literacy, highlighting why accessible civic education strengthens democratic participation. Broke down key constitutional principles, showcased real-life examples, and offered practical frameworks to empower citizens to understand and exercise their rights.</div>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-date">2025</div>
+                    <div class="timeline-title">Leadership Leadership and Recycling</div>
+                    <div class="timeline-description">Gave a talk at MIDES on recycling, leadership, and environmental awareness, sharing practical actions and simple frameworks to motivate communities toward sustainable change.</div>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-date">2024</div>
+                    <div class="timeline-title">Citizen Oversight Certification</div>
+                    <div class="timeline-description">Earned a Citizen Oversight certification from the Tecnocívica Academy of Panama, gaining practical skills in transparency, civic monitoring, and responsible citizen participation to strengthen democratic accountability.</div>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-date">2023</div>
+                    <div class="timeline-title">Professional Development Masterclass</div>
+                    <div class="timeline-description">Conducted intensive 3-day masterclass on "Strategic Communication for Leaders" for mid-level managers across various industries.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-content">
+            <div class="contact-info">
+                <h3>Let's Connect</h3>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <strong>Email</strong><br>
+                        joshuagonzalez.biz@gmail.com
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <div>
+                        <strong>Phone</strong><br>
+                        +1 (507) 
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <strong>Location</strong><br>
+                        Ciudad de Panama, Panama
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-calendar"></i>
+                    <div>
+                        <strong>Speaking Availability</strong><br>
+                        Available for events and conferences worldwide
+                    </div>
+                </div>
+            </div>
+            <div class="contact-form">
+                <form>
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="social-links">
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+        <p>&copy; 2024 Joshua Gonzalez. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Carousel functionality
+        let currentSlideIndex = 0;
+        const slides = document.querySelectorAll('.carousel-slide');
+        const dots = document.querySelectorAll('.nav-dot');
+        const track = document.getElementById('carouselTrack');
+
+        function showSlide(index) {
+            currentSlideIndex = index;
+            track.style.transform = `translateX(-${currentSlideIndex * 100}%)`;
+            
+            // Update dots
+            dots.forEach((dot, i) => {
+                dot.classList.toggle('active', i === currentSlideIndex);
+            });
+        }
+
+        function changeSlide(direction) {
+            currentSlideIndex += direction;
+            if (currentSlideIndex >= slides.length) currentSlideIndex = 0;
+            if (currentSlideIndex < 0) currentSlideIndex = slides.length - 1;
+            showSlide(currentSlideIndex);
+        }
+
+        function currentSlide(index) {
+            showSlide(index - 1);
+        }
+
+        // Auto-play carousel
+        setInterval(() => {
+            changeSlide(1);
+        }, 5000);
+
+        // Create floating particles
+        function createParticles() {
+            const particlesContainer = document.getElementById('particles');
+            const particleCount = 50;
+
+            for (let i = 0; i < particleCount; i++) {
+                const particle = document.createElement('div');
+                particle.className = 'particle';
+                particle.style.left = Math.random() * 100 + '%';
+                particle.style.animationDelay = Math.random() * 15 + 's';
+                particle.style.animationDuration = (Math.random() * 10 + 10) + 's';
+                particlesContainer.appendChild(particle);
+            }
+        }
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Scroll progress indicator
+        window.addEventListener('scroll', () => {
+            const scrollTop = window.pageYOffset;
+            const docHeight = document.body.offsetHeight - window.innerHeight;
+            const scrollPercent = (scrollTop / docHeight) * 100;
+            document.getElementById('scrollIndicator').style.transform = `scaleX(${scrollPercent / 100})`;
+        });
+
+        // Navbar background on scroll
+        window.addEventListener('scroll', () => {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 100) {
+                navbar.style.background = 'rgba(10, 14, 39, 0.98)';
+            } else {
+                navbar.style.background = 'rgba(10, 14, 39, 0.9)';
+            }
+        });
+
+        // Form submission
+        document.querySelector('.contact-form form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your message! I will get back to you soon.');
+            this.reset();
+        });
+
+        // Intersection Observer for animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe timeline items
+        document.querySelectorAll('.timeline-item').forEach(item => {
+            item.style.opacity = '0';
+            item.style.transform = 'translateY(30px)';
+            item.style.transition = 'all 0.6s ease';
+            observer.observe(item);
+        });
+
+        // Initialize everything when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            createParticles();
+        });
+
+        // Add typing effect to hero title
+        function typeWriter(element, text, speed = 100) {
+            let i = 0;
+            element.innerHTML = '';
+            function type() {
+                if (i < text.length) {
+                    element.innerHTML += text.charAt(i);
+                    i++;
+                    setTimeout(type, speed);
+                }
+            }
+            type();
+        }
+
+        // Initialize typing effect after page load
+        window.addEventListener('load', function() {
+            const heroTitle = document.querySelector('.hero h1');
+            const originalText = heroTitle.textContent;
+            setTimeout(() => {
+                typeWriter(heroTitle, originalText, 150);
+            }, 1000);
+        });
+
+        // Hero carousel - New Smooth Version
+        let heroIndex = 0;
+        const heroTrack = document.getElementById('heroTrack');
+        const heroDots = document.querySelectorAll('.hero-dot');
+        const totalSlides = 4;
+        
+        function showHeroSlide(index) {
+            heroIndex = index;
+            // Calculate transform: each slide is 25% of the 400% track width
+            // So we move 25% of track per slide, which equals 100% of viewport
+            const translateX = -(heroIndex * 25);
+            heroTrack.style.transform = `translateX(${translateX}%)`;
+            
+            // Update dots
+            heroDots.forEach((dot, i) => {
+                dot.classList.toggle('active', i === heroIndex);
+            });
+        }
+        
+        function changeHeroSlide(direction) {
+            heroIndex += direction;
+            if (heroIndex >= totalSlides) {
+                heroIndex = 0;
+            } else if (heroIndex < 0) {
+                heroIndex = totalSlides - 1;
+            }
+            showHeroSlide(heroIndex);
+        }
+        
+        function currentHeroSlide(n) {
+            showHeroSlide(n - 1);
+        }
+        
+        // Auto-play carousel
+        let heroCarouselInterval = setInterval(() => {
+            changeHeroSlide(1);
+        }, 6000);
+        
+        // Pause on hover
+        const heroCarousel = document.querySelector('.hero-carousel');
+        if (heroCarousel) {
+            heroCarousel.addEventListener('mouseenter', () => {
+                clearInterval(heroCarouselInterval);
+            });
+            heroCarousel.addEventListener('mouseleave', () => {
+                heroCarouselInterval = setInterval(() => {
+                    changeHeroSlide(1);
+                }, 6000);
+            });
+        }
+        
+        // Initialize carousel
+        showHeroSlide(0);
+    </script>
+</body>
+</html>
